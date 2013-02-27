@@ -29,13 +29,11 @@ namespace Morse_Code
         private void btnConvertToCode_Click_1(object sender, RoutedEventArgs e)
         {
             txtCode.Text = mc.ConvertToMorseCode(txtNormal.Text.ToUpper());
-            MessageBox.Show(txtCode.Text);
         }
 
         private void btnConvertToWords_Click_1(object sender, RoutedEventArgs e)
         {
             txtNormal.Text = mc.ConvertToNormal(txtCode.Text);
-            MessageBox.Show(txtNormal.Text);
         }
     }
 }

@@ -90,7 +90,8 @@ namespace Morse_Code
             string morseCode = "";
             for (int i = 0; i < t.Length; i++)
             {
-                morseCode += code[t[i]] + " ";
+                if(code.ContainsKey(t[i]))
+                    morseCode += code[t[i]] + " ";
             }
             return morseCode;
         }

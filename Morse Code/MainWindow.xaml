@@ -4,9 +4,9 @@
         Title="Morse Code Converter" Height="350" Width="525">
     <Grid Margin="15">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -14,9 +14,9 @@
         </Grid.ColumnDefinitions>
         
         <TextBlock>Normal: </TextBlock>
-        <TextBox x:Name="txtNormal" Grid.Column="1">SOS</TextBox>
+        <TextBox x:Name="txtNormal" Grid.Column="1" TextWrapping="Wrap" Margin="10">SOS</TextBox>
         <TextBlock Grid.Row="1">Morse Code: </TextBlock>
-        <TextBox x:Name="txtCode" Grid.Row="1" Grid.Column="1" ></TextBox>
+        <TextBox x:Name="txtCode" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Margin="10"></TextBox>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
             <Button x:Name="btnConvertToCode" Click="btnConvertToCode_Click_1" Margin="20" Padding="5">Get Morse Code</Button>
             <Button x:Name="btnConvertToWords" Click="btnConvertToWords_Click_1" Margin="20" Padding="5">Get Normal words</Button>
