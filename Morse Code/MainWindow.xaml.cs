@@ -26,14 +26,23 @@ namespace Morse_Code
         {
             InitializeComponent();
         }
-        private void btnConvertToCode_Click_1(object sender, RoutedEventArgs e)
+        private void btnConvert(object sender, RoutedEventArgs e)
         {
-            txtCode.Text = mc.ConvertToMorseCode(txtNormal.Text.ToUpper());
+            if (txtCode.Text.ToArray()[0] == '-' || txtCode.Text.ToArray()[0] == '.')
+            {
+                txtCode.Text = mc.ConvertToNormal(txtCode.Text);
+                Clipboard.SetText(txtCode.Text);
+            }
+            else
+            {
+                txtCode.Text = mc.ConvertToMorseCode(txtCode.Text.ToUpper());
+                Clipboard.SetText(txtCode.Text);
+            }
         }
 
         private void btnConvertToWords_Click_1(object sender, RoutedEventArgs e)
         {
-            txtNormal.Text = mc.ConvertToNormal(txtCode.Text);
+            
         }
     }
 }

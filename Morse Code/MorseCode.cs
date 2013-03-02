@@ -35,7 +35,32 @@ namespace Morse_Code
 
         public void LoadAmerican()
         {
-            throw new NotImplementedException();
+            code.Add('A', ".-");
+            code.Add('B', "-...");
+            code.Add('C', "...");
+            code.Add('D', "-...");
+            code.Add('E', ".");
+            code.Add('F', ".-.");
+            code.Add('G', "--.");
+            code.Add('H', "....");
+            code.Add('I', "..");
+            code.Add('J', "-.-.");
+            code.Add('K', "-.-");
+            code.Add('L', "-+-");
+            code.Add('M', "--");
+            code.Add('N', "-.");
+            code.Add('O', "._.");
+            code.Add('P', ".....");
+            code.Add('Q', "..-.");
+            code.Add('R', "._..");
+            code.Add('S', "...");
+            code.Add('T', "-");
+            code.Add('U', "..-");
+            code.Add('V', "...-");
+            code.Add('W', ".--");
+            code.Add('X', ".-..");
+            code.Add('C', ".._..");
+            code.Add('C', "..._.");
         }
 
         public void LoadContinential()

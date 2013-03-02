@@ -5,21 +5,14 @@
     <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
-        <TextBlock>Normal: </TextBlock>
-        <TextBox x:Name="txtNormal" Grid.Column="1" TextWrapping="Wrap" Margin="10">SOS</TextBox>
-        <TextBlock Grid.Row="1">Morse Code: </TextBlock>
-        <TextBox x:Name="txtCode" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Margin="10"></TextBox>
-        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
-            <Button x:Name="btnConvertToCode" Click="btnConvertToCode_Click_1" Margin="20" Padding="5">Get Morse Code</Button>
-            <Button x:Name="btnConvertToWords" Click="btnConvertToWords_Click_1" Margin="20" Padding="5">Get Normal words</Button>
-        </StackPanel>
+        <TextBlock Grid.Row="0">Text to convert </TextBlock>
+        <TextBox x:Name="txtCode" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" Margin="10"></TextBox>
+        <Button x:Name="btnConvertToCode" Click="btnConvert" Grid.Row="1" Grid.Column="1" Margin="20" Padding="5">Convert and Copy</Button>
     </Grid>
 </Window>
